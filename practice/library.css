@@ -1,0 +1,91 @@
+body{
+	width:1200px ;
+	background-color:white ;
+	margin:0px auto;
+}
+.clearFix:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+header{
+	background-color:#224499 ;
+}
+.row{
+	background-color:#FFFFFF;
+	width:909px ;
+	margin:0px auto ;
+	box-shadow:0px 0px 5px 0px #000000 ;
+	margin-bottom:10px ;
+}
+header>img{
+	width:909px ;
+	height:120px ;
+	background-color: white;
+	margin:0px 140px ;
+}
+nav{
+	height:35px ;
+	
+}
+.message{
+	width:909px ;
+	background-color:white ;
+	margin:0px auto;
+	border:6px solid lemonchiffon ;
+	
+}
+.footer a{
+	color:#FFFFFF ;
+	text-decoration: none;
+}
+.footer div{
+	float: left;
+	background-color:#224499 ;
+}
+.footer>div:first-child+div{
+	color:white ;
+	width:248px ;
+	float: left;
+}
+.footer>div:first-child+div+div{
+	color:white ;
+	width:250px ;
+}
+.my_menu02{
+	margin:0px 105px;
+	
+}
+.my_menu02 a{
+	text-decoration: none; 
+	
+}
+.my_menu02 li{
+	list-style-type: none;
+	border: 1px solid mediumpurple;
+	padding: 5px 10px;
+	background-color: #FFFFFF;
+	border:2 dashed #224499 ;
+	/*border-top:6px solid lemonchiffon ;
+	border-bottom:6px solid lemonchiffon  ;*/
+}
+.my_menu02>li{
+	float: left;
+}
+.my_menu02 li:hover{
+	background-color: #224499;
+	padding: 5px 15px;
+}
+
+.my_menu02 ul{
+	padding-left: 0px;
+	position: absolute;
+	margin-top: 5px;
+	display: none;
+}
+.my_menu02>li:hover>ul{
+	display: block;
+}
+.my_menu02 li:hover>a{
+	color: white;/*当鼠标经过链接文字变为白色*/
+}

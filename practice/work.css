@@ -1,0 +1,119 @@
+body{
+	background:url(img/w/bg.jpg);
+}
+.clearFix:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+div.LOGO{
+	float: left;
+	padding-left:20px ;
+	padding-top:3px ;
+}
+div.menu{
+	float: left;
+	height:130px ;
+	width:540px ;
+	padding-top:95px ;
+	padding-left:20px ;
+}
+
+div.inform{
+	height:130px ;
+	width:300px ;
+	float:right;
+	margin-top:60px ;
+}
+#menu{
+	width:400px ;
+	float: left;
+}
+#inform{
+	float: right;
+}
+
+#act ul.ul{
+	height:490px ;
+	position: relative;
+	margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+#act ul.ul li{
+	width:100% ;
+	list-style:none ;
+	position:absolute ;
+	top:0px ;
+	left:0px ;
+	display:none ;
+}
+#act ul.ul li a{
+	display: block;
+	width:100% ;
+	height:490px ;	
+}
+#act div.act_bottom{
+	width:145px ;
+	height:20px ;
+	margin:0px auto ;
+}
+#act div.act_bottom ul li{
+	width:16px ;
+	height:16px ;
+	border:1px solid lightsteelblue ;
+	list-style:none ;
+	float:left ;
+	margin:0px 2px ;
+	border-radius:50% ;
+}
+#act div.act_bottom ul li.hover{
+	background:lightgray;
+}
+
+
+
+.my_menu a{
+	text-decoration: none; 
+	
+}
+.my_menu li{
+	list-style-type: none;
+	border: 1px solid chocolate;
+	padding: 5px 10px;
+	background-color: #FFFFFF;
+	width:80px ;
+	text-align: center;
+
+}
+.my_menu>li{
+	float: left;
+}
+.my_menu li:hover{
+	background-color: chocolate;
+	padding: 5px 15px;
+}
+.my_menu{
+	margin: 0px;
+	
+}
+.my_menu ul{
+	padding-left: 0px;
+	position: absolute;
+	margin-top: 5px;
+	display: none;
+	z-index:1 ;
+	
+}
+.my_menu>li:hover>ul{
+	display: block;
+}
+.my_menu li:hover>a{
+	color: white;/*当鼠标经过链接文字变为白色*/
+}
+nav{
+	background:lightcoral ;
+}
+footer{
+	background:lightseagreen ;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="renderer" content="webkit">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="work.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.js" ></script>
+		<title>Work</title>
+	</head>
+	<body>
+		<header class="clearFix">
+			<div>
+				<img src="img/w/Q.jpg" />
+			</div>
+			<div class="LOGO" >
+				<img src="img/w/logo茶香3.1.png" width="130px" height="200px"/>
+			</div>
+			<div class="menu" >
+				<ul class="my_menu">
+					<li>Home   <a href=""></a></li>
+					<li>Product<a href=""></a></li>
+					<li>About  <a href=""></a></li>
+					<li>Contact<a href=""></a></li>
+				</ul>
+			</div>
+			<div class="inform" >
+				<form action="loginCheck.php">  <!--提交到xx文件检查-->
+			    <fieldset>	
+			    	<legend>登录信息</legend>
+				            用户名: <input type="text" name="user_name">    <br/>
+	               </br>     密码: <input type="password" name="user_password">    <br/> 
+	                 <br><input type="submit" value="提交" />                  
+			</div>
+		</header>
+		<div>
+			<div id="act">
+				<ul class="ul">
+					<li style="display: block;!important"><a href=""style="background:url(img/w/B.jpg);; background-position:center top ;h"></a></li>
+					<li><a href="" style="background:url(img/w/folio01-preview.jpg); background-position:center top ;"></a></li>
+					<li><a href="" style="background: url(img/w/C.jpg); background-position:center top ;"></a></li>
+					<li><a href="" style="background: url(img/w/A.1.jpg); background-position:center top ;"></a></li>
+				</ul>
+				<div class="act_bottom">
+					<ul>
+						<li class="hover"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+			<script>
+		     var C = $("#act .act_bottom ul li");
+		     var _index = 0;
+		     var ul = $("#act ul.ul li");
+		     var t;
+			 C.click(function(){
+			 
+			 _index = $(this).index();
+			auto(_index)
+			 })
+			 function auto(_index){
+			 	C.eq(_index).addClass("hover").siblings().removeClass("hover");
+			 	 ul.eq(_index).fadeIn().siblings().fadeOut();	
+			 }
+			 $("#act").hover(function(){
+			 	clearInterval(t)
+			 	},function(){
+			 	t = setInterval(function(){
+			 	_index++;
+			 	if(_index>3){
+			 		_index = 0;
+			 	}
+			 	auto(_index)
+			 },3000)
+			 })
+			 t = setInterval(function(){
+			 	_index++;
+			 	if(_index>3){
+			 		_index = 0;
+			 	}
+			 	auto(_index)
+			 },3000)
+			</script>
+		</div>
+		<nav>2</nav>
+		<footer>3</footer>
+	</body>
+</html>

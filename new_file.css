@@ -1,0 +1,90 @@
+body{
+	background:url(practice/img/w/bg-home.jpg) ;
+}
+.clearFix:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+.message{
+	width:600px ;
+	height:200px ;
+	background-color:white ;
+	margin:100px auto 0;
+	border-radius:5px ;
+	padding:0px 20px ;
+}
+.message p.title{
+	color:#666 ;
+	font-size:14px ;
+	line-height:45px ;
+}
+.message div.text{
+	width:590px ;
+	height:70px ;
+	border:1px solid lightgray ;
+	color:red ;
+	font-size:12px ;
+	font-family: "微软雅黑";
+	line-height:25px ;
+	padding:0px 5px ;
+}
+.message div.but{
+	width:600px;
+	height:40px ;
+	margin-top:20px ;
+	position: relative;
+}
+.message div.but .click-but{
+	float:right ;
+	padding:5px 25px ;
+	background:#9370DB ;
+	color:#FFFFFF ;
+	font-size:15px ;
+	font-family: "微软雅黑";
+	border-radius:6px ;
+	cursor:pointer ;
+}
+.message .but ul{
+	width:400px ;
+	height:180px ;
+	background: white;
+	border:1px solid lightgray ;
+	margin:0px ;
+	position: absolute;
+	top:20px ;
+	left:20px ;
+	display:none ;
+}
+.message .but ul li{
+	list-style:none ;
+	float:left ;
+	margin:2px ;
+}
+.con{
+	width:640px ;
+	margin:0px auto ;
+}
+.con .info{
+	width:640px ;
+	background:white ;
+	margin-bottom:10px ;
+}
+.con .info dl{
+	width:100% ;
+	height:54px ;
+	border-bottom:1px solid lightgray ;
+}
+.con .info dl dt{
+	float: left;
+}
+.con .info dl dt img{
+	border-radius:50% ;
+}
+.con .info dl dd{
+	float: left;
+	line-height:50px ;
+}
+.con .inform .content{
+	
+}

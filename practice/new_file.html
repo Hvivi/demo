@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../new_file.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.js" ></script>
+		<title>腾讯QQ空间发表</title>
+	</head>
+	<body>
+	    <div class="message">
+	    	<p class="title">有什么新鲜事想告诉大家？</p>
+	    	<div class="text" contenteditable="true"></div>
+	    	<div class="but">
+	    		<img class="imgface" src="img/f.jpg" width="30px"height="30px"/>
+	    		<span class="click-but">发表</span>
+	    		<ul>
+	    			<li><img class="imgface" src="img/f1.jpg" width="30px"height="30px"/></li>
+	    			<li><img class="imgface" src="img/f3.jpg" width="30px"height="30px"/></li>
+	    			<li><img class="imgface" src="img/face.jpg" width="30px"height="30px"/></li>
+	    		</ul>
+	    	</div>
+	    </div>
+	    <script>
+	    $(".imgface").click(function(e){
+	    	$("ul").slideDown();
+	    	e.stopPropagation();
+	    })
+	    $(document).click(function(){
+	    	$("ul").slideUp();
+	    })
+	    $(".message .but ul li").click(function(){
+	    	var img = $(this).find(".message .but ul li img").clone();
+	    	$(".text").append(img);
+	    })
+	    $(".click-but").click(function(){
+	    	var txt = $(".text").html();
+	    	if(txt == ""){
+	    		$(".text").focus();
+	    	}else{
+	    		$(".con").append('<div class="info"><dl><dt><img src="img/name.png" width="50px" height="50px"/></dt><dd>吕莹</dd></dl><div class="content">'+txt+'</div></div>');
+	    		$(".text").html("");
+	    	}
+	    	
+	    })
+	    </script>
+	    </div>
+	</body>
+</html>

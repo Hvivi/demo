@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="Cake.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.js" ></script>
+		<title>Cake</title>
+	</head>
+	<body>
+		<header id="header" class="clearFix">
+			<div class="logo"><img src="img/name.png" width="120px" height="120px"/></div>
+			<div class="nav">
+					<div class="add">address</div>
+					<div class="choose">
+						请选择你的籍贯：
+					</div>
+					<ul class="list">
+						<li>首页</li>
+						<li>｜</li>
+						<li>产品推荐</li>
+						<li>｜</li>
+						<li>蛋糕名录</li>
+						<li>｜</li>
+						<li>品牌故事</li>
+						<li>｜</li>
+						<li>联系</li>
+					</ul>
+			</div>
+			<div class="login clearFix">
+				    <ul class="list-right">
+						<li>吐槽</li>
+						<li>｜</li>
+						<li>点赞</li>
+						<li>｜</li>
+						<li>分享<li>
+					</ul></div>
+		</header>
+		<div id="banner">
+			<ul class="ul">
+				<li style="display: block;"><a href="" style="background-image: url(img/QQ浏览器截图_20160416132330_FE84D660F62B42d98FB60E4C00A835EC.jpg);background-position:center top ;  "> </a></li>
+				<li><a href="" style="background-image: url(img/QQ浏览器截图_20160416132258_CC1DE887EDB442709FD25DE099510A6C.jpg); background-position:center top ;"> </a></li>
+				<li><a href="" style="background-image: url(img/QQ浏览器截图_20160416131316_3900E7B1608A4d158F9AB21A07672C31.jpg); background-position:center top ;> </a></li>
+				<li><a href="" style="background-image:url(img/logo.gif) ;"> </a></li>
+			</ul>
+		</div>
+			<div class="banner-buttom">
+				<ul>
+					<li class="hover"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		<script>
+		 var but =  $(".banner-buttom ul li");
+		 var ul = $("#banner ul.ul li")
+		 var _index = 0;
+		 but.click(function(){
+		 	
+		 	_index = $(this).index();
+		 	auto(_index)
+		 })
+		 function auto(_index){
+		 	but.eq(_index).addClass("hover").siblings().removeClass("");
+		 	ul.eq(_index).fadeIn().siblings().fadeOut;
+		 }
+		 setInterval(function(){
+		 	_index++; 
+		 	if(_index>3){
+		 		_index = 0;
+		 	}
+		 	auto(_index)
+		 },3000)
+		</script>
+		<div id="content">
+			内容
+		</div>
+		<div id="footer">
+			底部
+		</div>
+	</body>
+</html>
